@@ -1,11 +1,11 @@
 """
-Episode Tracker
+TVeeBot Tracker CLI
 
 Usage:
-  episode-tracker add <id> [ --url=<daemon_url> ]
-  episode-tracker rm <id> [ --url=<daemon_url> ]
-  episode-tracker list [ --url=<daemon_url> ]
-  episode-tracker (-h | --help)
+  tveebot-tracker-cli add <id> [ --url=<daemon_url> ]
+  tveebot-tracker-cli rm <id> [ --url=<daemon_url> ]
+  tveebot-tracker-cli list [ --url=<daemon_url> ]
+  tveebot-tracker-cli (-h | --help)
 
 Options:
   --url=<daemon_url>    The URL to reach the daemon [default: http://localhost:30014]
@@ -19,9 +19,9 @@ from contextlib import contextmanager
 from beautifultable import BeautifulTable
 from docopt import docopt
 
-from tracker_cli.client import Client, RequestError, ServerError
+from tveebot_tracker_cli.client import Client, RequestError, ServerError
 
-version = 'Episode Tracker CLI: Version 0.2'
+version = 'TVeeBot Tracker CLI: Version 0.2'
 
 logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler())

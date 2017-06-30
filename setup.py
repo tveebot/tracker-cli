@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='tracker-cli',
+    name='tveebot-tracker-cli',
     version='0.2',
     description='Client to interact with the tveebot-tracker',
     url='https://github.com/tveebot/tracker-cli',
@@ -13,4 +13,9 @@ setup(
 
     install_requires=['beautifultable', 'docopt', ],
 
+    entry_points={
+        'console_scripts': [
+            'tveebot-tracker-cli=tveebot_tracker_cli:main',
+        ],
+    }
 )

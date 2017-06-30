@@ -1,7 +1,7 @@
 from pytest import raises
 
 from common.responses import Response, ErrorCode
-from tracker_cli.client import decouple_response, RequestError, ServerError
+from tveebot_tracker_cli.client import decouple_response, RequestError, ServerError
 
 
 class TestDecoupleResponse:
